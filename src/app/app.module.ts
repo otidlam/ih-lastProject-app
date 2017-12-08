@@ -7,15 +7,15 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
-import { LogInComponent } from './components//log-in/log-in.component';
 import { HeaderComponent } from './components//header/header.component';
-import { SignupComponent } from './components/signup/signup.component';
 import { EventComponent } from './components/event/event.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { LogInComponent } from './components/log-in/log-in.component';
 
 const routes: Routes = [
+  { path: 'main', component: AppComponent },
   { path: 'auth/login', component: LogInComponent },
   { path: 'auth/signup', component: SignupComponent },
-  { path: 'main', component: AppComponent },
   { path: 'event/_id', component: EventComponent }
 ];
 
